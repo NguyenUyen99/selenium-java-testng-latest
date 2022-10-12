@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 public class Topic_01_Check_Environment {
 	WebDriver driver;
+
 	String projectPath = System.getProperty("user.dir");
 
 	@BeforeClass
