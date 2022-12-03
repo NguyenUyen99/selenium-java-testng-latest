@@ -17,16 +17,16 @@ public class Topic_00_Template {
 	String osName= System.getProperty("os.name");
 
 
-	@BeforeClass
+	@BeforeClass	
 	public void beforeClass() {
 		if (osName.contains("Windows 10"))
 				 {
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver.exe");
 
 			
 		} else {
 			
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 
 
 		}
